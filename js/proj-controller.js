@@ -11,7 +11,7 @@ function initPage() {
 
 function renderPortfolios() {
     var proj = getProj();
-    var $elPortItem = $('.portfolio-container').html();
+    var $elPortItem = $('.portfolio-container');
 
     var strHtml = '';
     proj.forEach(function (proj) {
