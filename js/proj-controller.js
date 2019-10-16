@@ -23,7 +23,10 @@ function renderPortfolios() {
         strHtml += '  <i class="fa fa-plus fa-3x"></i>';
         strHtml += ' </div>';
         strHtml += ' </div>';
+
         strHtml += `<img   class="img-fluid " src="${proj.url}">`;
+
+
         strHtml += '  </a>';
         strHtml += '  <div class="portfolio-caption">';
         strHtml += `<h4>${proj.name}</h4>`;
