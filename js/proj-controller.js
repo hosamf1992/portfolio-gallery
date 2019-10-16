@@ -11,7 +11,8 @@ function initPage() {
 
 function renderPortfolios() {
     var proj = getProj();
-    var elPortItem = document.querySelector('.portfolio-container');
+    var $elPortItem = $('.portfolio-container').html();
+
     var strHtml = '';
     proj.forEach(function (proj) {
 
@@ -31,8 +32,8 @@ function renderPortfolios() {
         strHtml += '</div>';
 
     });
-
-    elPortItem.innerHTML = strHtml;
+    $elPortItem.html(strHtml);
+   
 
 }
 
@@ -43,7 +44,8 @@ function renderModal(id) {
     var projIdx = findProjById(id);
 
     var strHtml = '';
-    var elHtml = document.querySelector('.modal-container');
+    // var elHtml = document.querySelector('.modal-container');
+    var $elHtml=$('.modal-container');
 
 
 
@@ -81,7 +83,8 @@ function renderModal(id) {
 </div>
 </div>'`
         ;
-    elHtml.innerHTML = strHtml;
+    // elHtml.innerHTML = strHtml;
+    $elHtml.html(strHtml);
 
     strHtml = '';
 
